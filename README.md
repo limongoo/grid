@@ -4,7 +4,7 @@ Lab: Grid
 ## Lab Instructions
 * Create a How-To Page: that is, instruct users on how to do something. Tie their shoes, register to vote, gain more Twitter followers.
 * Use [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to make this How-To Page responsive.
-* You may use [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) as well–the two work well together, after all–but Grid should be the primary tool in creating responsiveness.
+* You may additionally use [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)–the two work well together, after all–but Grid should be the **primary** tool in creating responsiveness.
 * Follow the Webpack component architecture we've used on other labs.
 * **Sketch** your responsive layout plans before developing. These sketches can be rough.
 * Apply the principles of Chapter 3 of *Don't Make Me Think!* to make your page scan-friendly.
