@@ -5,7 +5,7 @@ Lab: Grid
 * Create a How-To Page: that is, instruct users on how to do something. Tie their shoes, register to vote, gain more Twitter followers.
 * Use [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) to make this How-To Page responsive.
 * You may additionally use [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)–the two work well together, after all–but Grid should be the **primary** tool in creating responsiveness.
-* Follow the Webpack component architecture we've used on other labs.
+* Follow the Webpack component architecture we've used on other labs, and implement a multi-page router.
 * **Sketch** your responsive layout and text structure before developing. These sketches can be rough.
 * Apply the principles of Chapter 3 of *Don't Make Me Think!* to make your page scan-friendly.
 
@@ -20,10 +20,10 @@ Include the answers to the following in your submission:
 
 ## Rubric
 * Sketches used to plan out responsive layout (2 points)
-* Webpack component architecture correctly applied (2 points)
+* Webpack component architecture and router correctly applied (2 points)
 * CSS Grid used properly for cross-device legibility (3 points)
 * Proper semantic HTML5 used for accessibility (1 points)
 * Information is designed to invite visual scanning (2 points)
 
 ## Stretch goal
-* Implement a router and create multiple pages
+* Use PostCSS variables and nesting as introduced in lecture
