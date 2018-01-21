@@ -21,7 +21,8 @@ Include the answers to the following in your submission:
 ## Rubric
 * Sketches used to plan out responsive layout (2 points)
 * Webpack component architecture correctly applied (2 points)
-* CSS Grid used properly for cross-device legibility (4 points)
+* CSS Grid used properly for cross-device legibility (3 points)
+* Proper semantic HTML5 used for accessibility (1 points)
 * Information is designed to invite visual scanning (2 points)
 
 ## Stretch goal
