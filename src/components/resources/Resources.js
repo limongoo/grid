@@ -1,10 +1,10 @@
-import html from './header.html';
-import './header.css';
+import html from './resources.html';
+import './resources.css';
 import Template from '../Template';
 
 const template = new Template(html);
 
-export default class Header {
+export default class Resources {
 
   render() {
     const dom = template.clone();
