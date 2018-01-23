@@ -33,10 +33,14 @@ main {
 }
 
 footer {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem;
   background-color: #eeeeee;
   a {
     border-bottom-color: $lightgray;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 700;
   }
 }
 

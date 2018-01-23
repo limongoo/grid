@@ -2,6 +2,16 @@
 
 .pageHeader {
     grid-area: h;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.pieTitle {
+    border-bottom: 10px solid $red;
+    transition: 0.3s ease all;
+    &:hover {
+        padding: 0 0 0.5rem;
+    }
 }
 
 .one {
@@ -30,13 +40,19 @@
 
 .congrats {
     grid-area: c;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.red {
+    color: $red;
 }
 
 .pieWrapper {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
     grid-template-areas:
         "h h"
         "one two"
@@ -46,10 +62,33 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.pieWrapper h3 {
+    margin: 3rem 0 1rem;
+    color: $red;
+    border-bottom: 4px solid $gray;
+    font-weight: 700;
+}
+
+.pieWrapper {
+    ul {
+        li {
+        list-style: none;
+        font-size: 1.2rem;
+        padding: 0.9rem 0;
+        }
+    }
+}
+
+figcaption {
+    margin: 1rem 0 0;
+    font-size: 0.8rem;
+    color: $darkgray;
+}
+
 /*  -------- Media Queries ------- */
 
 /* Mobile */
-@media only screen and (min-width: 320px) and (max-width: 580px) {
+@media only screen and (min-width: 320px) and (max-width: 820px) {
     .pieWrapper {
         grid-template-areas:
             "h"
@@ -60,22 +99,42 @@
             "six"
             "five"
             "c";
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    .pieTitle:hover {
+        padding: 0;
+    }
+
+    .pieTitle {
+        line-height: 3rem;
+    }
+
+    .pageHeader {
+        margin: 2rem 0 0;
+        text-align: left;
+    }
+
+    .pieWrapper h3 {
+        margin: 0 0 1rem;
+    }
+
+    .pieWrapper {
+        ul {
+            li {
+            list-style: none;
+            font-size: 1rem;
+            padding: 0.7rem 0;
+            }
+        }
+    }
+
+    .pieWrapper img {
+        margin: 3rem 0 0;
+        &:first-child {
+            /* margin: 0rem 0 0; */
+        }
     }
 }
 
-/* Tablet */
-@media only screen and (min-width: 580px) and (max-width: 820px) {
-    .pieWrapper {
-        grid-template-areas:
-            "h"
-            "two"
-            "one"
-            "three"
-            "four"
-            "six"
-            "five"
-            "c";
-        grid-template-columns: 1fr;    
-    }
-}

@@ -27,11 +27,12 @@
 
 .ulist {
   li {
-    padding: 0 1rem 0 0;
+    padding: 0 1rem 0;
     a {
       color: $white;
       border-bottom: 3px solid $red;
       transition: 0.3s ease all;
+      font-size: 1.1rem;
     }
     a:hover {
       border-bottom-color: $white;
