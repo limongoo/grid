@@ -1,12 +1,23 @@
+@import '../variables.css';
+
+.headerWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
-  color: #008834;
+  color: $white;
   border-bottom: 0px;
   transition: none;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  transition: 0.3s ease all;
 }
 
 .logo:hover {
-  color: #008834;
+  color: #8f0909;
   border-bottom: 0px;
 }
 
@@ -14,10 +25,29 @@
   display: flex;
 }
 
-.ulist li{
-  padding: 0 .7rem;
+.ulist {
+  li {
+    padding: 0 1rem 0 0;
+    a {
+      color: $white;
+      border-bottom: 3px solid $red;
+      transition: 0.3s ease all;
+    }
+    a:hover {
+      border-bottom-color: $white;
+    }
+  }
 }
 
 nav {
   justify-content: flex-end;
+}
+
+/*  -------- Media Queries ------- */
+
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+  .headerWrapper {
+    flex-direction: column;
+  }
 }

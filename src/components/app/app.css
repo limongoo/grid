@@ -1,9 +1,31 @@
+@import '../variables.css';
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template: auto 1fr auto;
+}
+
 header {
-  padding: 2rem 2rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(241, 82, 43);
+  padding: 2rem;
+  background-color: $red;
+  color: $white;
 }
 
 main {
@@ -12,11 +34,17 @@ main {
 
 footer {
   padding: 2rem;
+  background-color: #eeeeee;
+  a {
+    border-bottom-color: $lightgray;
+  }
 }
 
-.hidden {
-  display: none;
+.footerWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 /*  -------- Media Queries ------- */
 

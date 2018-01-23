@@ -1,9 +1,13 @@
 /* main.css */
+@import './components/variables.css';
+
+html {height: 100%;}
 
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  color: rgb(73, 73, 73);
+  color: $dark;
+  min-height: 100%;
 }
 
 p {
@@ -48,15 +52,15 @@ img {
 
 a {
   text-decoration: none;
-  color: #008834;
+  color: $red;
   transition: 0.3s ease all;
   padding: 0 0 3px;
   border-bottom: 3px solid white;
 }
 
 a:hover {
-  color: #414141;
-  border-bottom: 3px solid #414141;
+  color: $red;
+  border-bottom: 3px solid $red;
 }
 
 /*  -------- Media Queries ------- */
